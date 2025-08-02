@@ -1,5 +1,5 @@
 <h1 align="center">
-  <b>✨ 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐑𝐈𝐒𝐇𝐀𝐍𝐓 𝐓𝐇𝐀𝐊𝐔𝐑 ✨</b>
+  <b>✨ 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐀𝐊𝐀𝐒𝐇𝐎𝐏 ✨</b>
 </h1>
 
 <p align="center">
@@ -9,9 +9,9 @@
 ---
 
 <p align="center">
-  <a href="https://t.me/ganaasupport"><img src="https://img.shields.io/badge/💬 Support-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Support"></a>
-  <a href="https://t.me/ganaasupport"><img src="https://img.shields.io/badge/📢 Updates-FFB400?style=for-the-badge&logo=telegram&logoColor=white" alt="Updates"></a>
-  <a href="https://t.me/oy_baby"><img src="https://img.shields.io/badge/👑 Owner-FF69B4?style=for-the-badge&logo=telegram&logoColor=white" alt="Owner"></a>
+  <a href="https://t.me/AnanyaBotSupport"><img src="https://img.shields.io/badge/💬 Support-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Support"></a>
+  <a href="https://t.me/AnanyaBots"><img src="https://img.shields.io/badge/📢 Updates-FFB400?style=for-the-badge&logo=telegram&logoColor=white" alt="Updates"></a>
+  <a href="https://t.me/WTF_NoHope"><img src="https://img.shields.io/badge/👑 Owner-FF69B4?style=for-the-badge&logo=telegram&logoColor=white" alt="Owner"></a>
 </p>
 
 ---
