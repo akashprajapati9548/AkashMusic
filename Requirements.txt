@@ -1,0 +1,8 @@
+pyrogram==2.0.106
+tgcrypto==1.2.5
+pytgcalls==3.0.0.dev10
+yt-dlp==2024.05.27
+python-dotenv==1.0.1
+pymongo[srv]==4.7.2
+spotipy==2.23.0
+aiohttp==3.9.5
