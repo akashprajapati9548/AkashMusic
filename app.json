@@ -1,0 +1,37 @@
+{
+  "name": "AkashMusic",
+  "description": "A high-quality Telegram Music Bot developed by Rishant Thakur to stream music in voice chats.",
+  "repository": "https://github.com/yourusername/yourrepo",
+  "keywords": ["telegram", "music", "bot", "pyrogram", "rishant"],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID from my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API Hash from my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Your bot token from @BotFather",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram numeric user ID",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "stack": "heroku-22",
+  "addons": []
+}
