@@ -1,0 +1,7 @@
+temp_bot.session
+log.txt
+*.session
+*.log
+__pycache__/
+logs.csv
+cache
