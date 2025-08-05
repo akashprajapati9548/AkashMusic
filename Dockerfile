@@ -1,36 +1,14 @@
-# Use an official Python image (Python 3.11)
-FROM python:3.11-slim
+FROM nikolaik/python-nodejs:python3.10-nodejs19
 
-# Set environment variables
-ENV PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONUNBUFFERED=1
+RUN sed -i 's|http://deb.debian.org/debian|http://archive.debian.org/debian|g' /etc/apt/sources.list && \
+    sed -i '/security.debian.org/d' /etc/apt/sources.list && \
+    apt-get update && \
+    apt-get install -y --no-install-recommends ffmpeg && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
-# Set work directory
-WORKDIR /app
+COPY . /app/
+WORKDIR /app/
+RUN pip3 install --no-cache-dir -U -r requirements.txt
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    ffmpeg \
-    gcc \
-    libffi-dev \
-    libpq-dev \
-    libssl-dev \
-    git \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
-
-# Copy requirements first for better cache
-COPY requirements.txt .
-
-# Install Python dependencies
-RUN pip install --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
-
-# Copy the entire project
-COPY . .
-
-# Expose port (if using webhooks or web interface, otherwise not needed)
-# EXPOSE 8080
-
-# Set default command
-CMD ["python", "main.py"]
+CMD bash start
