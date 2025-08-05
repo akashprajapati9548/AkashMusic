@@ -1,24 +1,3 @@
-# Copyright (c) 2025 Nand Yaduwanshi <NoxxOP>
-# Location: Supaul, Bihar
-#
-# All rights reserved.
-#
-# This code is the intellectual property of Nand Yaduwanshi.
-# You are not allowed to copy, modify, redistribute, or use this
-# code for commercial or personal projects without explicit permission.
-#
-# Allowed:
-# - Forking for personal learning
-# - Submitting improvements via pull requests
-#
-# Not Allowed:
-# - Claiming this code as your own
-# - Re-uploading without credit or permission
-# - Selling or using commercially
-#
-# Contact for permissions:
-# Email: badboy809075@gmail.com
-
 from pyrogram.types import InlineKeyboardButton
 import config
 from ShrutiMusic import app
@@ -29,10 +8,10 @@ def start_panel(_):
             InlineKeyboardButton(
                 text=_["S_B_1"], url=f"https://t.me/{app.username}?startgroup=true"
             ),
-            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP),
+            InlineKeyboardButton(text=_["S_B_10"], callback_data="ping_status"),
         ],
         [
-            InlineKeyboardButton(text=_["E_X_1"], url=config.UPSTREAM_REPO),
+            InlineKeyboardButton(text=_["E_X_1"], callback_data="show_video_panel"),
             InlineKeyboardButton(text=_["S_B_11"], callback_data="about_page")  # About button
         ],
     ]
@@ -52,14 +31,14 @@ def private_panel(_):
                 callback_data="about_page"
             ),
             InlineKeyboardButton(
-                text=_["S_B_12"],
-                callback_data="owner_page"
+                text=_["L_N_G"],
+                callback_data="LG"
             )
         ],
         [
             InlineKeyboardButton(
                 text=_["E_X_1"],
-                callback_data="fork_repo"
+                callback_data="show_video_panel"
             ),
             InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
         ],
@@ -96,12 +75,3 @@ def owner_panel(_):
         ]
     ]
     return buttons
-
-
-# ©️ Copyright Reserved - @NoxxOP  Nand Yaduwanshi
-
-# ===========================================
-# ©️ 2025 Nand Yaduwanshi (aka @NoxxOP)
-# 🔗 GitHub : https://github.com/NoxxOP/ShrutiMusic
-# 📢 Telegram Channel : https://t.me/ShrutiBots
-# ===========================================
