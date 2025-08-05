@@ -331,4 +331,6 @@ HELP_34 = """ 🏷️ <b>WISH TAG HELP</b> 🌟
 HELP_35 = """ <b>User Welcome Message</b>
 • /welcome on/off: Enable or Disable welcome message . """
 
+HELP_36 = """ <b>Get History Users</b>
+• /sg [username/user id]: View History O f the users . """
 
