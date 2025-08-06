@@ -334,3 +334,6 @@ HELP_35 = """ <b>User Welcome Message</b>
 HELP_36 = """ <b>Get History Users</b>
 • /sg [username/user id]: View History O f the users . """
 
+HELP_37 = """<b>**Shayri**
+*</b>
+• /gf /bf /shayri /sari /shari /love /shayari - Shayari Commands
