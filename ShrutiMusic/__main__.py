@@ -55,6 +55,7 @@ COMMANDS = [
     BotCommand("slot", "🎰 Play slot"),
     BotCommand("jackpot", "🎰 Play jackpot"),
     BotCommand("bowling", "🎳 Play bowling"),
+    BotCommand("activevc", "🔎 Show Active voice chat"),
     BotCommand("ban", "🚫 Ban a user"),
     BotCommand("banall", "⚠️ Ban all users"),
     BotCommand("sban", "🧹 Delete & ban user"),
