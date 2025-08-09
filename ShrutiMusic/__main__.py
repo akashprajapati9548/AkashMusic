@@ -47,6 +47,7 @@ COMMANDS = [
     BotCommand("admins", "🛡 Tag all admins"),
     BotCommand("tgm", "🖼 Convert image to URL"),
     BotCommand("vid", "🎞 Download video from social media"),
+    BotCommand("sg", "🚨 Show History of the user"),
     BotCommand("dice", "🎲 Roll a dice"),
     BotCommand("ludo", "🎲 Play ludo"),
     BotCommand("dart", "🎯 Throw a dart"),
