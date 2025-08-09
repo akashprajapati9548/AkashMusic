@@ -39,7 +39,13 @@ import config
 checker = {}
 upvoters = {}
 
-Shruti_Repo = "https://files.catbox.moe/tub372.mp4"
+import os
+from pyrogram import Client, filters
+from pyrogram.types import InputMediaVideo, InlineKeyboardMarkup, InlineKeyboardButton
+
+DEFAULT_VIDEO_LINK = "https://files.catbox.moe/tub372.mp4"
+
+Shruti_Repo = os.getenv("SHRUTI_VIDEO_LINK", DEFAULT_VIDEO_LINK)
 
 @app.on_callback_query(filters.regex("show_video_panel"))
 async def show_video_callback(_, query):
